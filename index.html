@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Figuras geometricas</title>
+    <link href="Style-PracticaGeometria.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--Encabezado-->
+    <header>
+      <h1>FIGURAS GEOMÉTRICAS</h1>
+      <p>
+        Calcular diferentes medidas de figuras geométricas como área y
+        perímetro.
+      </p>
+    </header>
+
+    <!--Respuestas-->
+    <div class="answer">
+      <p id="result"></p>
+    </div>
+
+    <section>
+      <div class="box">
+        <div class="box-title">
+          <h2>Cuadrado</h2>
+        </div>
+        <div class="box-paragraph">
+          <p>¿Cuanto mide cada lado de tu cuadrado?</p>
+        </div>
+
+        <input
+          type="number"
+          name="side"
+          id="sideImput"
+          placeholder="Ingrese lados"
+        />
+        <button type="button" onclick="calculateperimSquare()">
+          perímetro
+        </button>
+        <button type="button" onclick="calcularAreaSquare()">Área</button>
+      </div>
+
+      <div class="box">
+        <div class="box-title">
+          <h2>Triángulo</h2>
+        </div>
+        <div class="box-paragraph">
+          <p>¿Cuanto mide cada lado de tu Triángulo?</p>
+        </div>
+
+        <input
+          type="number"
+          name="side1"
+          id="inputSide1"
+          placeholder="Ingrese el lado 1"
+        />
+        <input
+          type="number"
+          name="side2"
+          id="inputSide2"
+          placeholder="Ingrese el lado 2"
+        />
+        <input
+          type="number"
+          name="side3"
+          id="inputSide3"
+          placeholder="Ingrese el lado 3"
+        />
+
+        <button type="button" onclick="calculetePerimTriangle()">
+          Perímetro
+        </button>
+
+        <div class="box-paragraph">
+          <p>¿Cuanto mide la base y la altura de tu Triángulo?</p>
+        </div>
+
+        <input
+          type="number"
+          name="imputBase"
+          id="inputBase"
+          placeholder="Ingrese la base"
+        />
+        <input
+          type="number"
+          name="imputAltura"
+          id="inputAltura"
+          placeholder="Ingrese la altura"
+        />
+
+        <button type="button" onclick="calculateAreaTriangle()">Área</button>
+      </div>
+
+      <div class="box">
+        <div class="box-title">
+          <h2>Circulo</h2>
+        </div>
+
+        <div class="box-paragraph">
+          <p>¿Cuanto mide el Radio de tu circulo?</p>
+        </div>
+
+        <input
+          type="number"
+          name="inputRadio"
+          id="inputRadio"
+          placeholder="Ingrese el Radio"
+        />
+
+        <button type="button" onclick="CalculateDiameterCircle()">
+          Diámetro
+        </button>
+        <button type="button" onclick="CalculatePerimeterCircle()">
+          Perímetro
+        </button>
+        <button type="button" onclick="CalculateareaCircle()">Área</button>
+      </div>
+    </section>
+
+    <div>
+      <footer class="footer">&copy; 2022 FCC ElianGeometry</footer>
+    </div>
+
+    <script src="Practica-Geometria.js"></script>
+  </body>
+</html>
